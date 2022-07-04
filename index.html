@@ -227,7 +227,8 @@
 						       (V,W) \mid AB = 0 \rbrace
 					       \) <br>
 						
-					       The two GIT quotients of \(Z\) give a stratified Mukai flop.
+					       For \(2 \leq \dim V \leq \dim W -2 \), the two GIT quotients of \(Z\) give a 
+					       stratified Mukai flop.
 						</p>
 					</section>
 					<section>
@@ -247,7 +248,7 @@
 						</p>
 					</section>
 					<section>
-						<p> Kawamata/Namikawa: For stratified Mukai flops, it is not. &#128148;
+						<p> Kawamata/Namikawa: For stratified Mukai flops with \(\dim V=2\), it is not. &#128148;
 						</p>
 					</section>
 					<section>
@@ -256,20 +257,63 @@
 						</p>
 					</section>
 					<section>
-						<p> (MRB,Diemer,Favero) described a procedure to associate an integral kernel to 
+						<p> MRB-Diemer-Favero described a procedure to associate an integral kernel to 
 						any affine GIT problem given a linear algebraic monoid \(M\) with \(M^\times = G \).
 						</p>
 
-						<p> If \(G)\ is acting on \(X\), then let 
+						<p> If \(G\) is acting on \(X\) via \(\sigma : G \times X \to X \), then let 
 						\[
-						Q = \operatorname{im}k[X \times X \times M] \to k[X \times G] \\
-						r \otimes r^\prime \otimes m \mapsto r \sigma^\ast(r') m
+						Q = \operatorname{im}\left(k[X \times X \times M] \overset{\phi}{\to} k[X \times G]\right)
+						\]
+						where 
+						\[
+						r \otimes r^\prime \otimes f \mapsto r \sigma^\ast(r') f
 						\]
 						</p>
 					</section>
 					<section>
-						<p>
+						<p> By restricting \(Q\) to \(X^{ss}(+) \times X^{ss}(-)\), we get a integral kernel
+						\[
+						P \in D(\operatorname{Qcoh} X^{ss}(+)/G \times X^{ss}(-)/G) 
+						\]
 						</p>
+
+						<p> <b>Question</b>: When is \(\Phi_P\) fully-faithful? </p>
+					</section>
+					<section>
+						<p> For example, if \(\dim V = 1\) and \(\dim W = n+1\), then we get the graded ring 
+						\[
+						R = \frac{k[x_1,\ldots,x_n,y_1,\ldots,y_n]}{(x_1y_1+\cdots+x_ny_n)}
+						\]
+						the associate flop is called a Mukai flop and \(P\) is graph of the induced birational 
+						map -- which is not a FM kernel. 
+						</p>
+					</section>
+					<section>
+						<p> Fix: one needs to derive \(R\) </p>
+						<p> Then we get \(\mathcal O_{X \times_Y X^+}\) which is FM here. 
+					</section>
+					<section>
+						<p> For general stratified Mukai flop, \(R = k[A,B]/(AB) \), we couldn't get our 
+						hands on the representation theory of \(Q_{der}\) so we looked at its relative Koszul dual.
+						</p>
+						<p> 
+						\[
+						S = k[A,B,C]
+						\]
+						for \(C \in \operatorname{End}(V)\). 
+						</p>
+					</section>
+					<section>
+						<p> <b>Theorem</b>:(MRB,Chidambaram,Favero) <br> For \(\dim V = 2\), \(P\) is FM for the 
+						flop associated to \(S\). 
+						</p>
+					</section>
+					<section>
+						<p> <b>Corollary</b>: The Koszul dual to \(P\) is an FM kernel for the stratified 
+						Mukai flop. 
+						</p>
+						<p> We know that \(H^0\) of it is a CKL kernel. </p>
 					</section>
 
 			</div>

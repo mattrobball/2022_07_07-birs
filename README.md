@@ -6,7 +6,8 @@ Derived categories, arithmetic, and reconstruction.
 As I couldn't choose a single topic, I decided to try a double feature. Perhaps 
 it was doubly opaque. 
 
-The presentation uses the [Reveal.js framework](https://revealjs.com/) hosted 
+The presentation uses the [Reveal.js](https://revealjs.com/) framework, the 
+[KaTeX](katex.org) engine to render math, and is hosted 
 with [GitHub Pages](pages.github.com).
 
 ### Generation in prime characteristic 

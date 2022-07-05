@@ -28,3 +28,20 @@ We focus on recent joint work with
 [Nitin Chidambaram](https://guests.mpim-bonn.mpg.de/kcnitin/") 
 and David Favero where this construction is used to obtain Fourier-Mukai 
 kernels for stratified Mukai flops. 
+
+### Installation and use
+
+Reveal.js comes with server which hot reloads on changes to the html files. If you 
+don't have your own server, I recommend using this. 
+
+To use this as template for your talk, first install node. The simplest way 
+for an up-to-date version is via [npm](https://github.com/nvm-sh/nvm/blob/master/README.md). 
+Then install [npm](https://www.npmjs.com/package/npm). 
+
+Next, clone this repository. Inside the main folder of the repository, run 
+`npm install` to build the node module dependencies. 
+
+Run `npm start` to initialize the server. It will provide a url address for the server. 
+
+Now edit `index.html` to author your talk and point your favorite browser to 
+the url to see the results. 

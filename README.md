@@ -22,7 +22,7 @@ kernels for stratified Mukai flops.
 ### About this setup
 
 This is a talk I gave at the Banff International Research Station for the workshop
-Derived categories, arithmetic, and reconstruction. 
+Derived Categories, Arithmetic, and Reconstruction in Algebraic Geometry. 
 
 As I couldn't choose a single topic, I decided to try a double feature. Perhaps 
 it was doubly opaque. 

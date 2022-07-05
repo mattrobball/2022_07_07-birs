@@ -35,7 +35,7 @@ Reveal.js comes with server which hot reloads on changes to the html files. If y
 don't have your own server, I recommend using this. 
 
 To use this as template for your talk, first install node. The simplest way 
-for an up-to-date version is via [npm](https://github.com/nvm-sh/nvm/blob/master/README.md). 
+for an up-to-date version is via [nvm](https://github.com/nvm-sh/nvm/blob/master/README.md). 
 Then install [npm](https://www.npmjs.com/package/npm). 
 
 Next, clone this repository. Inside the main folder of the repository, run 
@@ -45,3 +45,5 @@ Run `npm start` to initialize the server. It will provide a url address for the 
 
 Now edit `index.html` to author your talk and point your favorite browser to 
 the url to see the results. 
+
+To enable access via the internet, set up [GitHub Pages](pages.github.com). 

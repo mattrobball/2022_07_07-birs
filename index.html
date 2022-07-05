@@ -45,7 +45,7 @@
 					<section>
 						<p>
 						Given an algebraic structure, one of the first steps to understanding 
-						it is to find generators for it. 
+						it is to find generators. 
 						</p>
 					</section>
 					<section>
@@ -100,7 +100,7 @@
 						<p> We have 
 						\( \langle R \rangle = \operatorname{perf} R
 						\), 
-						the subcategory of bounded complexs with finitely-generated projective 
+						the subcategory of bounded complexes with finitely-generated projective 
 						components. 
 						</p>
 						<p> 
@@ -157,11 +157,22 @@
 						</p>
 					</section>
 					<section>
+						<p> This has the marvelous by-product that \( F_\ast^e \) converts weak generators into 
+						strong ones. <br> 
+
+						If \( X \) is not regular, then any perfect generator \( G \) takes arbitrarily many 
+						cones to generate all of \( \operatorname{perf} X \).  <br>
+
+						However, \( F_\ast^e G \) will only need a uniformly bounded number of cones to generate
+						\( D^b(\operatorname{coh} X )\). 
+						</p>
+					</section>
+					<section>
 						<p><b>Corollary</b>: If \( \mathcal L \) is a very ample line bundle on \( X \), then 
 						\[
 						\bigoplus_{i=0}^{\dim X} F_\ast^e \mathcal L^i
 						\]
-						is a generator for \( D^b(\operatorname{coh} X )\). 
+						is a strong generator for \( D^b(\operatorname{coh} X )\). 
 						</p>
 					</section>
 					<section>
@@ -198,9 +209,13 @@
 					<section>
 						<p>Recall that a flip relative to a divisor \( D \) is a diagram 
 						\[
-						X \overset{f}{\to} Y \overset{f^+}{\leftarrow} X^+
+						\begin{CD}
+						@. X \\
+						@. @VV f V \\
+						X^+ @>> f^+ > Y
+						\end{CD}
 						\]
-						inducing an isomorphisms in codimension \(1\) and such that \(-D\) is \(f\)-ample 
+						inducing an isomorphisms in codimension \(\geq 1\) and such that \(-D\) is \(f\)-ample 
 						and \(D\) is \(f^+\)-ample.
 						</p>
 						<p> A flip is a flop if \(f^\ast K_X = (f^+)^\ast K_{X^+}\). 
@@ -219,16 +234,17 @@
 					<section>
 						<p> Groups with higher rank often provide more intricate examples. For example, 
 						let \(k\) be a field and \(V,W\) be finite-dimensional vector spaces over \(k\) and 
-						assume that \(\dim V < \dim W\). Set \(G = \operatorname{End}(V)\). 
+						assume that \(\dim V < \dim W\). Set \(G = \operatorname{End}(V)\). </p>
+					</section>
+					<section>
+						<p>
+						For \(A \in \operatorname{Hom}(W,V)\) and \(B \in \operatorname{Hom}(V,W)\) set
+						\[
+						       Z = \lbrace (A,B) \mid AB = 0 \rbrace
+						\] 
 
-					       Let <br>
-						\(
-						       Z = \lbrace (A,B) \in \operatorname{Hom}(W,V) \times \operatorname{Hom}
-						       (V,W) \mid AB = 0 \rbrace
-					       \) <br>
-						
-					       For \(2 \leq \dim V \leq \dim W -2 \), the two GIT quotients of \(Z\) give a 
-					       stratified Mukai flop.
+						For \(2 \leq \dim V \leq \dim W -2 \), the two GIT quotients of \(Z\) give a 
+						stratified Mukai flop.
 						</p>
 					</section>
 					<section>
@@ -260,14 +276,15 @@
 						<p> MRB-Diemer-Favero described a procedure to associate an integral kernel to 
 						any affine GIT problem given a linear algebraic monoid \(M\) with \(M^\times = G \).
 						</p>
-
+					</section>
+					<section>
 						<p> If \(G\) is acting on \(X\) via \(\sigma : G \times X \to X \), then let 
 						\[
 						Q = \operatorname{im}\left(k[X \times X \times M] \overset{\phi}{\to} k[X \times G]\right)
 						\]
 						where 
 						\[
-						r \otimes r^\prime \otimes f \mapsto r \sigma^\ast(r') f
+						r \otimes r^\prime \otimes f \overset{\phi}{\mapsto} r \sigma^\ast(r') f
 						\]
 						</p>
 					</section>
@@ -277,7 +294,8 @@
 						P \in D(\operatorname{Qcoh} X^{ss}(+)/G \times X^{ss}(-)/G) 
 						\]
 						</p>
-
+					</section>
+					<section>
 						<p> <b>Question</b>: When is \(\Phi_P\) fully-faithful? </p>
 					</section>
 					<section>
@@ -299,9 +317,21 @@
 						</p>
 						<p> 
 						\[
-						S = k[A,B,C]
+						S = k[A,B,T]
 						\]
-						for \(C \in \operatorname{End}(V)\). 
+						for \(T \in \operatorname{End}(V)\). 
+						</p>
+					</section>
+					<section>
+						<p>
+						An explicit presentation for \(Q\) is </p>
+						<p>
+						\[
+						\scriptsize Q = \frac{k[A_L,B_L,A_R,B_R,T_R,C]}{(CA_L-A_R,B_L-B_RC,CT_L-T_RC,c_i(T_L)-c_i(T_R))}
+						\]</p>
+						<p>
+						where \( C \in \operatorname{End}(V) \) and \(c_i\) are the coefficients of the 
+						characteristic polynomial. 
 						</p>
 					</section>
 					<section>
@@ -313,7 +343,7 @@
 						<p> <b>Corollary</b>: The Koszul dual to \(P\) is an FM kernel for the stratified 
 						Mukai flop. 
 						</p>
-						<p> We know that \(H^0\) of it is a CKL kernel. </p>
+						<p> We know that \(H^0\) is a CKL kernel. </p>
 					</section>
 
 			</div>
@@ -334,5 +364,10 @@
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
+		<!-- Mermaid for diagrams maybe? -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
+		<!-- <script> -->
+		<!-- 	mermaid.initialize({ startOnLoad: true }); -->
+		<!-- </script> -->
 	</body>
 </html>

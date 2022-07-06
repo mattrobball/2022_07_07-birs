@@ -61,17 +61,17 @@
 					</section>
 					<section>
 						<p>
-						For a group $G$, we look for a set \( \lbrace g_a \mid a \in A \rbrace \)
-						of elements such that for any \( x \in G \) we have
+						For a group $G$, we look for a set $ \lbrace g_a \mid a \in A \rbrace $
+						of elements such that for any $ x \in G $ we have
 						\[
 						x = g_{a_1}^{n_1} \cdots g_{a_l}^{n_l}
 						\]
-						for some \( n_i \in \mathbb{Z}\). 
+						for some $ n_i \in \mathbb{Z}$. 
 						</p>
 					</section>
 					<section>
 						<p>
-						For a module \( M \) over a ring \( R \), we seek a surjection 
+						For a module $ M $ over a ring $ R $, we seek a surjection 
 						\[
 							R^{\oplus A} \to M 
 						\]
@@ -79,7 +79,7 @@
 					</section>
 					<section>
 						<p>
-						For a triangulated category \( T \), our generative operation is forming 
+						For a triangulated category $ T $, our generative operation is forming 
 						cones
 						\[
 							X \overset{f}{\to} Y \to C(f) \to X[1]
@@ -88,111 +88,111 @@
 					</section>
 					<section>
 						<p>
-						<b> Definition </b>. We say that a (full) subcategory \( S \) generates 
-						\( T \) if the smallest subcategory of \( T \)
+						<b> Definition </b>. We say that a (full) subcategory $ S $ generates 
+						$ T $ if the smallest subcategory of $ T $
 						<ul>
 							<li>closed under finite sums, shifts, and summands </li>
 							<li>closed under triangles and </li>
-							<li>containing \( S \) </li>
+							<li>containing $ S $ </li>
 						</ul> <br>
-						is \( T \) itself.
+						is $ T $ itself.
 						</p>
 					</section>
 					<section>
-						<p> We write \( \langle S \rangle \) for this smallest subcategory in 
+						<p> We write $ \langle S \rangle $ for this smallest subcategory in 
 						general and say 
 						\[
 							\langle S \rangle = T 
 						\]
-						if \( S \) generates.
+						if $ S $ generates.
 						</p>
 					</section>
 					<section>
 						<p> We have 
-						\( \langle R \rangle = \operatorname{perf} R
-						\), 
+						$ \langle R \rangle = \operatorname{perf} R
+						$, 
 						the subcategory of bounded complexes with finitely-generated projective 
 						components. 
 						</p>
 						<p> 
-						If we are Noetherian (and commutative), \( R \) generates \( D^b(\operatorname{mod} R) \)
-						if and only if \( R \) is regular by Auslander-Buchsbaum.
+						If we are Noetherian (and commutative), $ R $ generates $ D^b(\operatorname{mod} R) $
+						if and only if $ R $ is regular by Auslander-Buchsbaum.
 						</p>
 					</section>
 					<section>
-						<p><b>Challenge</b>: I hand you \( R \). You hand back a generator for 
-						\( D^b(\operatorname{mod} R) \). 
+						<p><b>Challenge</b>: I hand you $ R $. You hand back a generator for 
+						$ D^b(\operatorname{mod} R) $. 
 						</p>
 					</section>
 					<section>
 						<p>Some examples to meditate upon: 
 						<ul>
-							<li> \( k[x]/(x^2) \) </li>
-							<li> \( k[x,y,z]/(xy,xz) \) </li>
+							<li> $ k[x]/(x^2) $ </li>
+							<li> $ k[x,y,z]/(xy,xz) $ </li>
 						</p>
 					</section>
 					<section>
-						<p> Assume that \( R \) lives over a field \( k \) with \(\operatorname{char} k > 0 \). </p>
-						<p><b>Theorem</b>: (MRB,Lank) If \( R \) is Noetherian and \( F_\ast R \) is 
-						finitely-generated, then for \( e \gg 0 \), \(F_\ast^e R\) generates 
-						\( D^b(\operatorname{mod} R )\). 
+						<p> Assume that $ R $ lives over a field $ k $ with $\operatorname{char} k > 0 $. </p>
+						<p><b>Theorem</b>: (MRB,Lank) If $ R $ is Noetherian and $ F_\ast R $ is 
+						finitely-generated, then for $ e \gg 0 $, $F_\ast^e R$ generates 
+						$ D^b(\operatorname{mod} R )$. 
 						</p>
 					</section>
 					<section>
 						<p> This doesn't work globally. <br>
-						If \( C \) is smooth and proper with \( g(C) > 0 \), then \(F_\ast^e \mathcal O_C \) 
-						does not generate for any \( e\). 
+						If $ C $ is smooth and proper with $ g(C) > 0 $, then $F_\ast^e \mathcal O_C $ 
+						does not generate for any $ e$. 
 						</p>
 					</section>
 					<section>
 						<p> Two natural questions: 
 						<ol>
-							<li> For what \( X \) does \( F_\ast^e \mathcal O_X \) generate? </li>
-							<li> Does \( F_\ast^e \operatorname{perf} X \) generate? </li>
+							<li> For what $ X $ does $ F_\ast^e \mathcal O_X $ generate? </li>
+							<li> Does $ F_\ast^e \operatorname{perf} X $ generate? </li>
 						</ol>
 						</p>
 					</section>
 					<section>
 						<p> Regarding Question 1, we have a guess. 
 						</p>
-						<p><b>Conjecture</b>: For \( X \) smooth and projective, \(F_\ast^e \mathcal O_X \) 
-						generates if and only if \( D^b(\operatorname{coh} X) \) possesses a full 
+						<p><b>Conjecture</b>: For $ X $ smooth and projective, $F_\ast^e \mathcal O_X $ 
+						generates if and only if $ D^b(\operatorname{coh} X) $ possesses a full 
 						exceptional collection.
 						</p>
 					</section>
 					<section>
 						<p> Question 2 has an answer. 
 						</p>
-						<p><b>Theorem</b>: (MRB,Lank) For \( e \gg 0 \), \( F_\ast^e \operatorname{perf} X \) 
-						generates \(D^b(\operatorname{coh} X) \). 
+						<p><b>Theorem</b>: (MRB,Lank) For $ e \gg 0 $, $ F_\ast^e \operatorname{perf} X $ 
+						generates $D^b(\operatorname{coh} X) $. 
 						</p>
 					</section>
 					<section>
-						<p> This has the marvelous by-product that \( F_\ast^e \) converts weak generators into 
+						<p> This has the marvelous by-product that $ F_\ast^e $ converts weak generators into 
 						strong ones. <br> 
 
-						If \( X \) is not regular, then any perfect generator \( G \) takes an unbounded number of 
-						cones to generate all of \( \operatorname{perf} X \).  <br>
+						If $ X $ is not regular, then any perfect generator $ G $ takes an unbounded number of 
+						cones to generate all of $ \operatorname{perf} X $.  <br>
 
-						However, \( F_\ast^e G \) will only need a uniformly bounded number of cones to generate
-						\( D^b(\operatorname{coh} X )\). 
+						However, $ F_\ast^e G $ will only need a uniformly bounded number of cones to generate
+						$ D^b(\operatorname{coh} X )$. 
 						</p>
 					</section>
 					<section>
-						<p><b>Corollary</b>: If \( \mathcal L \) is a very ample line bundle on \( X \), then 
+						<p><b>Corollary</b>: If $ \mathcal L $ is a very ample line bundle on $ X $, then 
 						\[
 						\bigoplus_{i=0}^{\dim X} F_\ast^e \mathcal L^i
 						\]
-						is a strong generator for \( D^b(\operatorname{coh} X )\). 
+						is a strong generator for $ D^b(\operatorname{coh} X )$. 
 						</p>
 					</section>
 					<section>
 						<p>Relations to other works: 
 						<ul>
-							<li>One can find generators of \(D^b(\operatorname{coh} X) \) pretty generally:
+							<li>One can find generators of $D^b(\operatorname{coh} X) $ pretty generally:
 							Rouquier, Iyengar-Takahashi, Neeman,... but not as constructively.</li>
 							<li> Independently Iyengar-Pollitz-Mukhopadhyay recently announced the affine case. 
-							They also say that you can take \(e =1 \) for complete intersections. </li>
+							They also say that you can take $e =1 $ for complete intersections. </li>
 						</ul>
 						</p>
 					</section>
@@ -210,15 +210,15 @@
 					</p>
 					</section>
 					<section>
-						<img src="https://guests.mpim-bonn.mpg.de/kcnitin/img/mockup/pic.jpg" style="height:220px"
+						<img src="https://guests.mpim-bonn.mpg.de/kcnitin/img/mockup/pic.jpg" style="height:250px"
 							  alt="Picture of Nitin Chidambaram"> &nbsp &nbsp
 						<img src="https://sites.ualberta.ca/~favero/images/Home%20Page%20Photo.png" 
-							  style="height:220px" alt="Picture of David Favero">
+							  style="height:250px" alt="Picture of David Favero">
 						<p> Joint with <a href="https://guests.mpim-bonn.mpg.de/kcnitin/">Nitin Chidambaram</a> 
 						and <a href="https://sites.ualberta.ca/~favero/">David Favero</a>.</p>
 					</section>
 					<section>
-						<p>Recall that a flip relative to a divisor \( D \) is a diagram 
+						<p>Recall that a flip relative to a divisor $ D $ is a diagram 
 						\[
 						\begin{CD}
 						@. X \\
@@ -226,15 +226,15 @@
 						X^+ @>> f^+ > Y
 						\end{CD}
 						\]
-						inducing an isomorphisms in codimension \(\geq 1\) and such that \(-D\) is \(f\)-ample 
-						and \(D\) is \(f^+\)-ample.
+						inducing an isomorphisms in codimension $\geq 1$ and such that $-D$ is $f$-ample 
+						and $D$ is $f^+$-ample.
 						</p>
-						<p> A flip is a flop if \(f^\ast K_X = (f^+)^\ast K_{X^+}\). 
+						<p> A flip is a flop if $f^\ast K_X = (f^+)^\ast K_{X^+}$. 
 					</section>
 					<section>
 						<p>
 						Geometric Invariant Theory provides a natural source of flips. For example, given 
-						a \(\mathbb{Z}\)-graded ring \(R\) we get a flip where 
+						a $\mathbb{Z}$-graded ring $R$ we get a flip where 
 						\[
 						X = \operatorname{Proj}~ \bigoplus_{n \leq 0} R_n \\
 						X^+ = \operatorname{Proj}~ \bigoplus_{n \geq 0} R_n \\
@@ -244,22 +244,22 @@
 					</section> 
 					<section>
 						<p> Groups with higher rank often provide more intricate examples. For example, 
-						let \(k\) be a field and \(V,W\) be finite-dimensional vector spaces over \(k\) and 
-						assume that \(\dim V < \dim W\).</p>
+						let $k$ be a field and $V,W$ be finite-dimensional vector spaces over $k$ and 
+						assume that $\dim V < \dim W$.</p>
 					</section>
 					<section>
 						<p>
-						Set \( G = \operatorname{Aut}(V) \). 
-						For \(A \in \operatorname{Hom}(W,V)\) and \(B \in \operatorname{Hom}(V,W)\) set
+						Set $ G = \operatorname{Aut}(V) $. 
+						For $A \in \operatorname{Hom}(W,V)$ and $B \in \operatorname{Hom}(V,W)$ set
 						\[
 						       Z = \lbrace (A,B) \mid AB = 0 \rbrace
 						\]
-						We get two GIT quotients \(Z^{ss}(+)/G\) and \(Z^{ss}(-)/G\) related by a flop.
+						We get two GIT quotients $Z^{ss}(+)/G$ and $Z^{ss}(-)/G$ related by a flop.
 						</p>
 					</section>
 					<section>
 						<p>
-						For \(2 \leq \dim V \leq \dim W -2 \), the two GIT quotients of \(Z\) give a 
+						For $2 \leq \dim V \leq \dim W -2 $, the two GIT quotients of $Z$ give a 
 						stratified Mukai flop.
 						</p>
 					</section>
@@ -280,7 +280,7 @@
 						</p>
 					</section>
 					<section>
-						<p> Kawamata/Namikawa: For stratified Mukai flops with \(\dim V=2\), it is not. &#128148;
+						<p> Kawamata/Namikawa: For stratified Mukai flops with $\dim V=2$, it is not. &#128148;
 						</p>
 					</section>
 					<section>
@@ -290,11 +290,11 @@
 					</section>
 					<section>
 						<p> MRB-Diemer-Favero described a procedure to associate an integral kernel to 
-						any affine GIT problem given a linear algebraic monoid \(M\) with \(M^\times = G \).
+						any affine GIT problem given a linear algebraic monoid $M$ with $M^\times = G $.
 						</p>
 					</section>
 					<section>
-						<p> If \(G\) is acting on \(Z\) via \(\sigma : G \times Z \to Z \), then let 
+						<p> If $G$ is acting on $Z$ via $\sigma : G \times Z \to Z $, then let 
 						\[
 						Q = \operatorname{im}\left(k[Z \times Z \times M] \overset{\phi}{\to} k[Z \times G]\right)
 						\]
@@ -305,62 +305,62 @@
 						</p>
 					</section>
 					<section>
-						<p> By restricting \(Q\) to \(Z^{ss}(+) \times Z^{ss}(-)\), we get a integral kernel
+						<p> By restricting $Q$ to $Z^{ss}(+) \times Z^{ss}(-)$, we get a integral kernel
 						\[
 						P \in D(\operatorname{Qcoh} Z^{ss}(+)/G \times Z^{ss}(-)/G) 
 						\]
 						</p>
 					</section>
 					<section>
-						<p> <b>Question</b>: When is \(\Phi_P\) fully-faithful? </p>
+						<p> <b>Question</b>: When is $\Phi_P$ fully-faithful? </p>
 					</section>
 					<section>
-						<p> For example, if \(\dim V = 1\) and \(\dim W = n+1\), then we get the graded ring 
+						<p> For example, if $\dim V = 1$ and $\dim W = n+1$, then we get the graded ring 
 						\[
 						R = \frac{k[x_1,\ldots,x_n,y_1,\ldots,y_n]}{(x_1y_1+\cdots+x_ny_n)}
 						\]
-						the associate flop is called a Mukai flop and \(P\) is graph of the induced birational 
+						the associate flop is called a Mukai flop and $P$ is graph of the induced birational 
 						map -- which is not a FM kernel. 
 						</p>
 					</section>
 					<section>
-						<p> Fix: one needs to derive \(R\) </p>
-						<p> Then we get \(\mathcal O_{X \times_Y X^+}\) which is FM here. 
+						<p> Fix: one needs to derive $R$ </p>
+						<p> Then we get $\mathcal O_{X \times_Y X^+}$ which is FM here. 
 					</section>
 					<section>
-						<p> For general stratified Mukai flop, \(R = k[A,B]/(AB) \), we couldn't get our 
-						hands on the representation theory of \(Q_{der}\) so we looked at its relative Koszul dual.
+						<p> For general stratified Mukai flop, $R = k[A,B]/(AB) $, we couldn't get our 
+						hands on the representation theory of $Q_{der}$ so we looked at its relative Koszul dual.
 						</p>
 						<p> 
 						\[
 						S = k[A,B,T]
 						\]
-						for \(T \in \operatorname{End}(V)\). 
+						for $T \in \operatorname{End}(V)$. 
 						</p>
 					</section>
 					<section>
 						<p>
-						An explicit presentation for \(Q\) is </p>
+						An explicit presentation for $Q$ is </p>
 						<p>
 						\[
 						\scriptsize Q = \frac{k[A_L,B_L,A_R,B_R,T_R,C]}
 						{(CA_L-A_R,B_L-B_RC,CT_L-T_RC,c_i(T_L)-c_i(T_R))}
 						\]</p>
 						<p>
-						where \( C \in \operatorname{End}(V) \) and \(c_i\) are the coefficients of the 
+						where $ C \in \operatorname{End}(V) $ and $c_i$ are the coefficients of the 
 						characteristic polynomial. 
 						</p>
 					</section>
 					<section>
-						<p> <b>Theorem</b>:(MRB,Chidambaram,Favero) <br> For \(\dim V = 2\), \(P\) is FM for the 
-						flop associated to \(S\). 
+						<p> <b>Theorem</b>:(MRB,Chidambaram,Favero) <br> For $\dim V = 2$, $P$ is FM for the 
+						flop associated to $S$. 
 						</p>
 					</section>
 					<section>
-						<p> <b>Corollary</b>: The Koszul dual to \(P\) is an FM kernel for the stratified 
+						<p> <b>Corollary</b>: The Koszul dual to $P$ is an FM kernel for the stratified 
 						Mukai flop. 
 						</p>
-						<p> We know that \(\mathcal H^0P^!\) is a CKL kernel. </p>
+						<p> We know that $\mathcal H^0P^!$ is a CKL kernel. </p>
 					</section>
 
 			</div>
